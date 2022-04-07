@@ -39,6 +39,7 @@ var hour4 = hourlyTask4.getAttribute("data-hour");
 var hour5 = hourlyTask5.getAttribute("data-hour");
 var hourArray = [hour9, hour10, hour11, hour12, hour1, hour2, hour3, hour4, hour5];
 
+
 function renderTasks() {
     for (var i = 0; i < hourlyTaskArray.length; i++) {
         var hour = parseInt(hourArray[i]);
@@ -51,6 +52,15 @@ function renderTasks() {
             console.log("custom gray");
         }
     };
+    render9AM();
+    render10AM();
+    render11AM();
+    render12PM();
+    render1PM();
+    render2PM();
+    render3PM();
+    render4PM();
+    render5PM();
 }
 
 renderTasks();
@@ -69,100 +79,110 @@ var btn5 = document.querySelector("#btn5");
 
 btn9.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[i].value;
-        localStorage.setItem("task9AM", JSON.stringify(newTask));
+        var newTask = hourlyTask9.value;
+        alert("task successfully saved");
+        localStorage.setItem("task9AM", newTask);
     }
 });
-btn10.addEventListener("click", function() {
+btn10.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[1].value;
-        localStorage.setItem("task10AM", JSON.stringify(newTask));
+        var newTask = hourlyTask10.value;
+        alert("task successfully saved");
+        localStorage.setItem("task10AM", newTask);
     }
 });
-btn11.addEventListener("click", function() {
+btn11.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[2].value;
-        localStorage.setItem("task11AM", JSON.stringify(newTask));
+        var newTask = hourlyTask11.value;
+        alert("task successfully saved");
+        localStorage.setItem("task11AM", newTask);
     }
 });
-btn12.addEventListener("click", function() {
+btn12.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[3].value;
-        localStorage.setItem("task12AM", JSON.stringify(newTask));
+        var newTask = hourlyTask12.value;
+        alert("task successfully saved");
+        localStorage.setItem("task12PM", newTask);
     }
 });
-btn1.addEventListener("click", function() {
+btn1.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[4].value;
-        localStorage.setItem("task1PM", JSON.stringify(newTask));
+        var newTask = hourlyTask1.value;
+        alert("task successfully saved");
+        localStorage.setItem("task1PM", newTask);
     }
 });
-btn2.addEventListener("click", function() {
+btn2.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[5].value;
-        localStorage.setItem("task2PM", JSON.stringify(newTask));
+        var newTask = hourlyTask2.value;
+        alert("task successfully saved");
+        localStorage.setItem("task2PM", newTask);
     }
 });
-btn3.addEventListener("click", function() {
+btn3.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[6].value;
-        localStorage.setItem("task3PM", JSON.stringify(newTask));
+        var newTask = hourlyTask3.value;
+        alert("task successfully saved");
+        localStorage.setItem("task3PM", newTask);
     }
 });
-btn4.addEventListener("click", function() {
+btn4.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[7].value;
-        localStorage.setItem("task4PM", JSON.stringify(newTask));
+        var newTask = hourlyTask4.value;
+        alert("task successfully saved");
+        localStorage.setItem("task4PM", newTask);
     }
 });
-btn5.addEventListener("click", function() {
+btn5.addEventListener("click", function(event) {
     var element = event.target;
-
     if (element.matches(".btn")) {
-        var state = element.getAttribute("data-number");
-        var stateParse = parseInt(state);
-        i = stateParse;
-        var newTask = hourlyTaskArray[8].value;
-        localStorage.setItem("task5PM", JSON.stringify(newTask));
+        var newTask = hourlyTask5.value;
+        alert("task successfully saved");
+        localStorage.setItem("task5PM", newTask);
     }
 });
+
+function render9AM() {
+    var savedTask = localStorage.getItem("task9AM");
+    hourlyTask9.textContent = savedTask;
+}
+function render10AM() {
+    var savedTask = localStorage.getItem("task10AM");
+    hourlyTask10.textContent = savedTask;
+}
+function render11AM() {
+    var savedTask = localStorage.getItem("task11AM");
+    hourlyTask11.textContent = savedTask;
+}
+function render12PM() {
+    var savedTask = localStorage.getItem("task12PM");
+    hourlyTask12.textContent = savedTask;
+}
+function render1PM() {
+    var savedTask = localStorage.getItem("task1PM");
+    hourlyTask1.textContent = savedTask;
+}
+function render2PM() {
+    var savedTask = localStorage.getItem("task2PM");
+    hourlyTask2.textContent = savedTask;
+}
+function render3PM() {
+    var savedTask = localStorage.getItem("task3PM");
+    hourlyTask3.textContent = savedTask;
+}
+function render4PM() {
+    var savedTask = localStorage.getItem("task4PM");
+    hourlyTask4.textContent = savedTask;
+}
+function render5PM() {
+    var savedTask = localStorage.getItem("task5PM");
+    hourlyTask5.textContent = savedTask;
+}
