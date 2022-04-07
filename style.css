@@ -83,7 +83,7 @@ textarea{
 }
 
 .time-card {
-  border-top: 2px solid #aeafb0d9;
+  border-top: 2px solid #aeafb06b;
   padding: 0;
 }
 
@@ -94,13 +94,23 @@ ul {
 }
 
 .custom-gray {
-  background-color: #aeafb0d9;
+  background-color: #aeafb06b;
+  width: 100%;
+  border: 1px solid rgb(114, 114, 114);
 }
 
 .custom-green {
   background-color: #45ff67cc;
+  width: 100%;
+  border: 1px solid #aeafb06b;
 }
 
 .custom-red {
   background-color: #ff5148d0;
+  width: 100%;
+  border: 1px solid #aeafb06b;
+}
+
+.custom-size {
+  width:100%;
 }
