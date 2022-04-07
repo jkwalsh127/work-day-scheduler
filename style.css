@@ -25,7 +25,7 @@ textarea{
   white-space: pre-wrap;
 }
 
-.time-block{
+/* .time-block{
   text-align: center;
   border-radius: 15px;
 }
@@ -34,15 +34,15 @@ textarea{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
-}
+} */
 
-.hour {
+/* .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-}
+} */
 
-.past {
+/* .past {
   background-color: #d3d3d3;
   color: white;
 }
@@ -55,20 +55,17 @@ textarea{
 .future {
   background-color: #77dd77;
   color: white;
-}
+} */
 
-.saveBtn {
+/* .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-}
+} */
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-}
+
 
 
 
@@ -77,8 +74,9 @@ textarea{
   padding: 0;
 }
 
+
 .time-label {
-  margin: 10% 0 0 50%;
+  margin: 10% 0 0 40%;
 }
 
 .container {
@@ -92,6 +90,7 @@ textarea{
 ul {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .custom-gray {
@@ -105,23 +104,3 @@ ul {
 .custom-red {
   background-color: #ff5148d0;
 }
-
-#textarea-label {
-  margin: 0px 0 0 0;
-  padding: 0;
-};
-
-.form-control {
-  padding: 0;
-  margin: 0;
-};
-
-.form-group {
-  padding: 0;
-  margin: 0;
-};
-
-.list-group-item {
-  padding: 0;
-  margin: 0;
-};
