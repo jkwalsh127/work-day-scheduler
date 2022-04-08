@@ -9,6 +9,7 @@
 | HTML     |    ✅    |
 | CSS  |    ✅     |
 | JavaScript  |    ✅    |
+| jQuery  |    ✅    |
 
 ## Description
 
@@ -16,9 +17,9 @@ This project is a web app designed to be a daily planner. I used jQuery to impor
 
 ### Method
 
-1. Hardcode 9 sections of form inputs in HTML doc to represent each hour of the business day, giving unique ids to each
-2. Set the timer in .js doc and append the days date as a subheading
-3. use the timer for the current hour, comparing this value to the hour value of each section to set unique classes based on the time of day
+1. Hardcode 9 sections of form inputs in the HTML document to represent each hour of the business day, giving unique ids to each
+2. Set the timer in the .js doc and append the day's date to a subheading on the html document
+3. use the timer to extract the current hour, comparing this value to the hour value of each section to set the section elements with unique classes based on the time of day
 4. The user will enter tasks for the hour in text areas, which will to be saved to local stoarge when their corresponding save buttons are clicked
 5. Render the data from local storage on a seconds basis
 
@@ -31,7 +32,7 @@ This project is a web app designed to be a daily planner. I used jQuery to impor
 
 #### Usage
 
-Click <a href="https://jkwalsh127.github.io/timed-javascript-quiz-app/">**here**</a> to check out the deployed quiz!
+Click <a href="https://jkwalsh127.github.io/work-day-scheduler/">**here**</a> to check out the deployed planner!
 
 
 #### Credits
