@@ -4,7 +4,7 @@
 
 ---
 
-|   Languages   | Used |
+|   Languages/Libraries   | Used |
 | ----------- | ----------- |
 | HTML     |    ✅    |
 | CSS  |    ✅     |
