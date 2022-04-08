@@ -1,17 +1,14 @@
 $(document).ready(function () {
 
-    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
+    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 });
 
-function appendTasks() {
-
-}
-
 var time
 setInterval(() => {
-    time = moment().format("MMMM Do YYYY, HH:mm:ss");
+    time = moment().format("dddd, MMMM Do YYYY");
     $("#currentDay").text(time);
+    renderTasks();
 }, 1000);
 
 var currentHour = moment().format("k");
@@ -43,13 +40,12 @@ var hourArray = [hour9, hour10, hour11, hour12, hour1, hour2, hour3, hour4, hour
 function renderTasks() {
     for (var i = 0; i < hourlyTaskArray.length; i++) {
         var hour = parseInt(hourArray[i]);
-        if (hour > currentHourParse) {
+        if (hour > 10) {
             hourlyTaskArray[i].setAttribute("class", "custom-green");
-        } else if (hour == currentHourParse) {
+        } else if (hour == 10) {
             hourlyTaskArray[i].setAttribute("class", "custom-red");
         } else {
             hourlyTaskArray[i].setAttribute("class", "custom-gray");
-            console.log("custom gray");
         }
     };
     render9AM();
@@ -62,8 +58,6 @@ function renderTasks() {
     render4PM();
     render5PM();
 }
-
-renderTasks();
 
 
 
