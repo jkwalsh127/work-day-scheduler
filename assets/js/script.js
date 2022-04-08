@@ -40,9 +40,9 @@ var hourArray = [hour9, hour10, hour11, hour12, hour1, hour2, hour3, hour4, hour
 function renderTasks() {
     for (var i = 0; i < hourlyTaskArray.length; i++) {
         var hour = parseInt(hourArray[i]);
-        if (hour > 10) {
+        if (hour > currentHourParse) {
             hourlyTaskArray[i].setAttribute("class", "custom-green");
-        } else if (hour == 10) {
+        } else if (hour == currentHourParse) {
             hourlyTaskArray[i].setAttribute("class", "custom-red");
         } else {
             hourlyTaskArray[i].setAttribute("class", "custom-gray");
