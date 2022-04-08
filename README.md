@@ -32,7 +32,7 @@ This project is a web app designed to be a daily planner. I used jQuery to impor
 
 #### Usage
 
-Click <a href="https://jkwalsh127.github.io/work-day-scheduler/">**here**</a> to check out the deployed planner!
+Click <a href="https://jkwalsh127.github.io/work-day-scheduler/" target="_blank">**here**</a> to check out the deployed planner!
 
 
 #### Credits
