@@ -1,7 +1,5 @@
 # work-day-scheduler
 
-# timed-javascript-quiz-app
-
 ---
 
 |   Languages/Libraries   | Used |
